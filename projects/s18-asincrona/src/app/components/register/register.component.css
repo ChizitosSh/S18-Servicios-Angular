@@ -1,0 +1,24 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    height: 60%;
+    align-items: center;
+}
+
+.login {
+    width: 330px;
+    text-align: center;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container i {
+    cursor: pointer;
+}
+
+.spinner {
+    margin: 0 auto;
+}

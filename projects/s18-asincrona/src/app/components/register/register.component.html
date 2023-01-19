@@ -1,0 +1,30 @@
+<section class="login-container">
+    <section class="login">
+        <mat-spinner class="spinner" diameter="50" *ngIf="loading"></mat-spinner>
+
+        <form (ngSubmit)="Login()" *ngIf="!loading">
+            <p class="input-container">
+                <mat-form-field appearance="outline">
+                    <mat-label>Email</mat-label>
+                    <input matInput placeholder="Ingresa tu email" autocomplete="off" name="email" [(ngModel)]="datos.email" pattern="^[A-Za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required #email="ngModel">
+                    <mat-icon matSuffix>person</mat-icon>
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Password</mat-label>
+                    <input matInput [type]="hide ? 'password' : 'text'" placeholder="Ingresa tu contraseña" name="password" autocomplete="off" [(ngModel)]="datos.password" required #password="ngModel">
+                    <i mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </i>
+                </mat-form-field>
+                <button mat-raised-button color="primary" type="submit" [disabled]="email.invalid && password.invalid">Login</button>
+            </p>     
+        </form>
+    </section>
+</section>
+<section class="container">
+    <section class="json-container">
+        <pre>{{ usuariosArray | json }}</pre>
+    </section>
+</section>
+
+<router-outlet></router-outlet>
