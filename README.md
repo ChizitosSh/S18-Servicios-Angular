@@ -6,11 +6,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 `Vista al ingresar a la página:`
 
-![Al ingresar a la página:](projects\s18-asincrona\src\assets\register-antes.png)
+![Al ingresar a la página:](https://github.com/ChizitosSh/S18-Servicios-Angular/blob/master/projects/s18-asincrona/src/assets/register-antes.png)
 
 `Vista después de ingresar los datos en el registro:`
 
-![Después de ingresar los datos en el registro:](projects\s18-asincrona\src\assets\register-despues.png)
+![Después de ingresar los datos en el registro:](https://github.com/ChizitosSh/S18-Servicios-Angular/blob/master/projects/s18-asincrona/src/assets/register-despues.png)
 
 ## Development server
 
